@@ -5,10 +5,11 @@
       <configuration>
         <setting name="validation-enabled" value="true" />
         <datasource-mapping>
+          <factory-entry name="library" />
           <factory-entry name="projeto_jpa" />
         </datasource-mapping>
         <naming-strategy-map />
-        <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/libray/src/main/resources/META-INF/persistence.xml" />
+        <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/library/src/main/resources/META-INF/persistence.xml" />
       </configuration>
     </facet>
   </component>

@@ -28,7 +28,7 @@ public class Library extends LibraryForm {
 
             File file = jFileChooser.getSelectedFile();
             String fileName = file.getName();
-            String fileExtension = Utils.getFileExtension(fileName);
+            String fileExtension = libraryService.getFileExtension(fileName);
 
             if (!fileExtension.equals("csv") && !fileExtension.equals("xml")) {
                 JOptionPane.showMessageDialog(this, "Tipo de documento inválido.", "Erro", JOptionPane.ERROR_MESSAGE);
